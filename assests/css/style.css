@@ -214,10 +214,22 @@ box-shadow: inset 560px 0px 120px 120px #224059 !important;
     margin-bottom: 18px;
     transition: .3s;
 }
-.hh-1:hover,.hh-2:hover,
-.hh-3:hover{
-    border-bottom: 3px solid #00a9e3;
-    text-decoration: underline #00a9e3 5px;
+
+.hh-1,.hh-2,hh-3{
+  display: inline-block;
+}
+
+.hh-1::after , .hh-2::after , .hh-3::after {
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: #00a9e3;
+  transition: 300ms;
+}
+
+.hh-1:hover::after , .hh-2:hover::after , .hh-3:hover::after {
+  width: 100%;
 }
 
 .how-item p{
