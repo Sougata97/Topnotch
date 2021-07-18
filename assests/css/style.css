@@ -281,7 +281,7 @@ box-shadow: inset 560px 0px 120px 120px #224059 !important;
     text-align: right;
 }
 .th-1:hover,.th-2:hover,.th-3:hover{
-    margin-bottom: 50px;
+    transform: scale(1.1)
 } 
 
 .test-card{
@@ -292,7 +292,7 @@ box-shadow: inset 560px 0px 120px 120px #224059 !important;
     margin-bottom: 40px;
 }
 .th-1,.th-2,.th-3{
-    transition: .4s;
+    transition: 1000ms;
 }
 .test-row{
     align-items: center;
